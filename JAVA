@@ -1,0 +1,11 @@
+// Get the navbar element
+const navbar = document.getElementById("navbar");
+
+// Function to check if the page is scrolled and update the navbar style
+window.onscroll = function() {
+    if (window.scrollY > 50) {
+        navbar.classList.add("navbar-scrolled");
+    } else {
+        navbar.classList.remove("navbar-scrolled");
+    }
+};
